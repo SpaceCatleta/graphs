@@ -369,6 +369,11 @@ namespace SoftwareConstructing.Main
             StringFlagChanged?.Invoke(topindex, flag);
         }
 
+        public string GetStringFlag(int topindex)
+        {
+            return VisitFlags[topindex];
+        }
+
 
         /// <summary>
         /// Устанавливает всем вершинам указанную метку
