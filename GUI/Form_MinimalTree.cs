@@ -50,10 +50,10 @@ namespace SoftwareConstructing_Forms
 
         private void bRead_Click(object sender, EventArgs e)
         {
-            int[,] matr = Files.Fill("alg2in.txt", -1);
+            int[,] matr = Files.ReadFile("alg2in.txt", -1);
             int size = matr.GetLength(0);
             controller = new SoftwareConstructing.Alg2.Controller(size, DGV_Matrix, PB_GraphGraphics);
-            Files.Fill2(matr, controller);
+            Files.Fill_DGV(matr, controller);
         }
     }
 

@@ -12,7 +12,7 @@ namespace ADS_Labs_4sem.Main
         /// <param name="FileName"> Имя файла </param>
         /// <param name="infinity"> Условное обозначение бесконечности </param>
         /// <returns> Возвращает матрицу смежности </returns>
-        public static int[,] Fill(string FileName, int infinity)
+        public static int[,] ReadFile(string FileName, int infinity)
         {
             string[] buffer;
             StreamReader file = new StreamReader(FileName);
@@ -34,7 +34,7 @@ namespace ADS_Labs_4sem.Main
         }
 
 
-        public static void Fill2(int[,] matr, Controller contr)
+        public static void Fill_DGV(int[,] matr, Controller contr)
         {
             int size = matr.GetLength(0);
             for(int i = 0; i < size; i++)
