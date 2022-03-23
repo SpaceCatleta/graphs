@@ -34,6 +34,7 @@ namespace SoftwareConstructing_Forms
             this.B_GetSize = new System.Windows.Forms.Button();
             this.DGV_Matrix = new System.Windows.Forms.DataGridView();
             this.B_boot1 = new System.Windows.Forms.Button();
+            this.read = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_GraphGraphics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Matrix)).BeginInit();
             this.SuspendLayout();
@@ -88,15 +89,27 @@ namespace SoftwareConstructing_Forms
             this.B_boot1.UseVisualStyleBackColor = true;
             this.B_boot1.Click += new System.EventHandler(this.B_boot1_Click);
             // 
-            // Form_Prototype
+            // read
+            // 
+            this.read.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.read.Location = new System.Drawing.Point(1079, 12);
+            this.read.Name = "read";
+            this.read.Size = new System.Drawing.Size(271, 47);
+            this.read.TabIndex = 35;
+            this.read.Text = "прочитать из файйла";
+            this.read.UseVisualStyleBackColor = true;
+            this.read.Click += new System.EventHandler(this.read_Click);
+            // 
+            // Form_Way
             // 
             this.ClientSize = new System.Drawing.Size(1433, 714);
+            this.Controls.Add(this.read);
             this.Controls.Add(this.B_boot1);
             this.Controls.Add(this.B_Swich);
             this.Controls.Add(this.PB_GraphGraphics);
             this.Controls.Add(this.B_GetSize);
             this.Controls.Add(this.DGV_Matrix);
-            this.Name = "Form_Prototype";
+            this.Name = "Form_Way";
             ((System.ComponentModel.ISupportInitialize)(this.PB_GraphGraphics)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Matrix)).EndInit();
             this.ResumeLayout(false);
@@ -110,5 +123,6 @@ namespace SoftwareConstructing_Forms
         private System.Windows.Forms.Button B_GetSize;
         private System.Windows.Forms.DataGridView DGV_Matrix;
         private System.Windows.Forms.Button B_boot1;
+        private System.Windows.Forms.Button read;
     }
 }

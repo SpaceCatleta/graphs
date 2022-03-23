@@ -54,6 +54,7 @@
     <Compile Include="GraphVisualization\Graphs_Way.cs" />
     <Compile Include="GraphVisualization\MatrixView.cs" />
     <Compile Include="GraphVisualization\Controller.cs" />
+    <Compile Include="Main\Files.cs" />
     <Compile Include="Main\MatrixGraph.cs" />
     <Compile Include="Main\DataGridView_Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

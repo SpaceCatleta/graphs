@@ -33,6 +33,7 @@
             this.PB_GraphGraphics = new System.Windows.Forms.PictureBox();
             this.B_GetSize = new System.Windows.Forms.Button();
             this.DGV_Matrix = new System.Windows.Forms.DataGridView();
+            this.bRead = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_GraphGraphics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Matrix)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +43,7 @@
             this.B_boot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.B_boot1.Location = new System.Drawing.Point(664, 24);
             this.B_boot1.Name = "B_boot1";
-            this.B_boot1.Size = new System.Drawing.Size(539, 47);
+            this.B_boot1.Size = new System.Drawing.Size(501, 47);
             this.B_boot1.TabIndex = 39;
             this.B_boot1.Text = "Поиск минимального дерева алгоритмом Прима";
             this.B_boot1.UseVisualStyleBackColor = true;
@@ -87,11 +88,23 @@
             this.DGV_Matrix.Size = new System.Drawing.Size(641, 581);
             this.DGV_Matrix.TabIndex = 35;
             // 
+            // bRead
+            // 
+            this.bRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bRead.Location = new System.Drawing.Point(1171, 24);
+            this.bRead.Name = "bRead";
+            this.bRead.Size = new System.Drawing.Size(248, 47);
+            this.bRead.TabIndex = 40;
+            this.bRead.Text = "Читать из файла";
+            this.bRead.UseVisualStyleBackColor = true;
+            this.bRead.Click += new System.EventHandler(this.bRead_Click);
+            // 
             // Form_MinimalTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1437, 712);
+            this.Controls.Add(this.bRead);
             this.Controls.Add(this.B_boot1);
             this.Controls.Add(this.B_Swich);
             this.Controls.Add(this.PB_GraphGraphics);
@@ -112,5 +125,6 @@
         private System.Windows.Forms.PictureBox PB_GraphGraphics;
         private System.Windows.Forms.Button B_GetSize;
         private System.Windows.Forms.DataGridView DGV_Matrix;
+        private System.Windows.Forms.Button bRead;
     }
 }

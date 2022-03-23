@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ADS_Labs_4sem.Main;
+using System;
 using System.Windows.Forms;
 
 namespace SoftwareConstructing_Forms
@@ -51,6 +45,15 @@ namespace SoftwareConstructing_Forms
         private void B_boot1_Click(object sender, EventArgs e)
         {
             controller.primAlgo();
+        }
+
+
+        private void bRead_Click(object sender, EventArgs e)
+        {
+            int[,] matr = Files.Fill("alg2in.txt", -1);
+            int size = matr.GetLength(0);
+            controller = new SoftwareConstructing.Alg2.Controller(size, DGV_Matrix, PB_GraphGraphics);
+            Files.Fill2(matr, controller);
         }
     }
 
