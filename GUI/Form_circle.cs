@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using ADS_Labs_4sem.Main;
+using System;
 
 
 namespace SoftwareConstructing_Forms
@@ -48,6 +50,14 @@ namespace SoftwareConstructing_Forms
         private void B_boot1_Click(object sender, EventArgs e)
         {
             controller.minimalCircle();
+        }
+
+        private void bRead_Click(object sender, EventArgs e)
+        {
+            int[,] matr = Files.Fill("alg3in.txt", -1);
+            int size = matr.GetLength(0);
+            controller = new SoftwareConstructing.Alg3.Controller(size, DGV_Matrix, PB_GraphGraphics);
+            Files.Fill2(matr, controller);
         }
     }
 }

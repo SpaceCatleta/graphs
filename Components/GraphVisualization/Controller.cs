@@ -276,7 +276,7 @@ namespace SoftwareConstructing.GraphVisualization
         /// <param name="sender"></param>
         /// <param name="location"></param>
         /// <param name="value"></param>
-        private void DGV_View_CellChanged(object sender, System.Drawing.Point location, int value)
+        public void DGV_View_CellChanged(object sender, System.Drawing.Point location, int value)
         {          
             graph_model[location.Y, location.X] = value == 0 ? graph_model.INF : value;
 
